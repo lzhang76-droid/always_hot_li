@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Always Hot / Always Fresh — Gesture Poster</title>
+
+    <!-- p5 + addons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/addons/p5.dom.min.js"></script>
+
+    <!-- ml5 (handpose) -->
+ <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+
+    <!-- dat.GUI for controls -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+
+    <!-- Your sketch -->
+    <script src="sketch.js"></script>
+
+    <style>
+      body { margin: 0; background: #fff; }
+      /* 将 dat.GUI 放到右上角 */
+      .dg.ac { right: 12px !important; left: auto !important; top: 12px !important; }
+      /* 小提示文本样式 */
+      #hint { position: absolute; left: 12px; bottom: 12px; background: rgba(0,0,0,0.6); color: #fff; padding: 6px 10px; border-radius: 6px; font-family: sans-serif;}
+      canvas { display: block; margin: 0 auto; }
+    </style>
+  </head>
+
+  <body>
+    <div id="hint">Allow camera → show hand → click canvas to trigger</div>
+  </body>
+</html>
+
+
